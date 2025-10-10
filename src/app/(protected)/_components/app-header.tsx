@@ -5,9 +5,7 @@ import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-type AppHeaderProps = {};
-
-export function AppHeader({}: AppHeaderProps) {
+export function AppHeader() {
   return (
     <HStack as="header" className="px-4 py-3 border-b">
       <Link href="/prompts" className="flex items-baseline gap-2">
