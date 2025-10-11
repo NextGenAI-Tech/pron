@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { ShaderAnimation } from "@/components/ui/shader-animation";
 import { BookOpen, Variable, Share2, Save } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { nanoid } from "nanoid";
 import { Grid } from "@/components/layout/grid";

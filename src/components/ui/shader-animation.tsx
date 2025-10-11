@@ -11,6 +11,7 @@ export function ShaderAnimation() {
     camera: THREE.Camera;
     scene: THREE.Scene;
     renderer: THREE.WebGLRenderer;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     uniforms: any;
     animationId: number;
   } | null>(null);

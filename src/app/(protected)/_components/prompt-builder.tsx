@@ -1,8 +1,6 @@
 import { GridItem } from "@/components/layout/grid";
 
-type PromptBuilderProps = {};
-
-export function PromptBuilder({}: PromptBuilderProps) {
+export function PromptBuilder() {
   return (
     <>
       <GridItem className="lg:col-span-1">Prompt Builder</GridItem>

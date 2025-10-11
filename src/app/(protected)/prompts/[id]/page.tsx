@@ -7,6 +7,7 @@ export default async function PromptDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+  console.log("🚀 ~ PromptDetailPage ~ id:", id);
 
   return (
     <>
