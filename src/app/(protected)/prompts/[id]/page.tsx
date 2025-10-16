@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { PromptBuilder } from "../../_components/prompt-builder";
+import { getPromptById } from "@/data/prompts-model";
+import { notFound } from "next/navigation";
 
 export default async function PromptDetailPage({
   params,
@@ -7,11 +9,15 @@ export default async function PromptDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  console.log("🚀 ~ PromptDetailPage ~ id:", id);
+  const prompt = await getPromptById()(id);
+
+  if (!prompt) {
+    notFound();
+  }
 
   return (
-    <>
-      <PromptBuilder />
-    </>
+    <Fragment>
+      <PromptBuilder prompt={prompt} />
+    </Fragment>
   );
 }
