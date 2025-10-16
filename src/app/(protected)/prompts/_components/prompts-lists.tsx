@@ -134,7 +134,7 @@ export function PromptsLists({
                           {p.title}
                         </CardTitle>
                         {p.description ? (
-                          <CardDescription className="line-clamp-2">
+                          <CardDescription className="line-clamp-1">
                             {p.description}
                           </CardDescription>
                         ) : null}

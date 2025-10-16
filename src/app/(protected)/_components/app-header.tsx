@@ -26,7 +26,7 @@ export function AppHeader() {
   return (
     <HStack
       as="header"
-      className="shadow-primary/10 border-b px-4 py-3 shadow-lg"
+      className="shadow-primary/10 bg-background/50 sticky top-0 z-50 border-b px-4 py-3 shadow-lg backdrop-blur-2xl"
     >
       <Link href="/prompts" className="flex items-baseline gap-2">
         <Text size="2xl" className="text-primary font-semibold">
